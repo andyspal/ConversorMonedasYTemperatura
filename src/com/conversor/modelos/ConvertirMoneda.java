@@ -52,7 +52,7 @@ public class ConvertirMoneda {
 			JOptionPane.showMessageDialog(null,"Tienes $" + df.format(moneda * 0.26) + " pesos");
 			break;
 		}
-		case "Won Coreano a Pesos": {
+		case "Won Surcoreano a Pesos": {
 			JOptionPane.showMessageDialog(null,"Tienes $" + df.format(moneda * 0.03) + " pesos");
 			break;
 		}

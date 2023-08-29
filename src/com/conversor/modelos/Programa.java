@@ -29,7 +29,7 @@ public class Programa {
 			monedaString = JOptionPane.showInputDialog(null, "Ingrese la cantidad de dinero que deseas convertir: ");
 			try {
 				moneda = Double.parseDouble(monedaString);
-				String[] monedas = {"Pesos a Dólar","Pesos a Euro", "Pesos a Libras", "Pesos a Yen", "Pesos a Won surCoreano", "Dólar a Pesos","Euro a Pesos", "Libras a Pesos","Yen a Pesos","Won surCoreano a Pesos"};
+				String[] monedas = {"Pesos a Dólar","Pesos a Euro", "Pesos a Libras", "Pesos a Yen", "Pesos a Won Surcoreano", "Dólar a Pesos","Euro a Pesos", "Libras a Pesos","Yen a Pesos","Won surCoreano a Pesos"};
 				String conversionMoneda = (String) JOptionPane.showInputDialog(null, "Elige una opción para convertir","Monedas", JOptionPane.QUESTION_MESSAGE, null, monedas, monedas[0]);
 				ConvertirMoneda convertirMoneda = new ConvertirMoneda();
 				convertirMoneda.convertir(conversionMoneda, moneda);
@@ -40,5 +40,13 @@ public class Programa {
 		default:
 			throw new IllegalArgumentException("Valor inesperado: " + seleccionPrincipal);
 		}
+		
+		int continuar = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Confirmar", JOptionPane.YES_NO_CANCEL_OPTION);
+		if (continuar == JOptionPane.YES_OPTION) {
+			  new Programa();
+		}
+		else {
+			  	JOptionPane.showMessageDialog(null, "Programa terminado");
+			}
 	}
 }
