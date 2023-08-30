@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class ConvertirTemperatura {	
 	
-	private DecimalFormat df = new DecimalFormat("#.00");
+	private DecimalFormat df = new DecimalFormat("0.00");
 	
 	public void convertir(String conversorTemperatura, double temperatura) {
 		temperatura = Double.parseDouble(df.format(temperatura));

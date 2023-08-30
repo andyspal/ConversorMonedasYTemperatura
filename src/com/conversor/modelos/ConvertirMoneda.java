@@ -6,7 +6,7 @@ import javax.swing.JOptionPane;
 
 public class ConvertirMoneda {
 	
-	private DecimalFormat df = new DecimalFormat("#.00");
+	private DecimalFormat df = new DecimalFormat("0.00");
 	
 	public void convertir(String conversorMoneda, double moneda) {
 		moneda = Double.parseDouble(df.format(moneda));
